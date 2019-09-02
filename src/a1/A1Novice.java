@@ -31,13 +31,14 @@ public class A1Novice {
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
 				
+				double sum=+ totalitem;
+				
 				if (j == itemtypes-1) {		
 					System.out.println(firstinitial+". "+lastname+": "+totalitem);
 					
 				}
 					
 			
-				
 				
 				
 			
