@@ -14,7 +14,7 @@ public class A1Novice {
 	    int totalcustomers = scan.nextInt();// Read user input
 	    System.out.println(totalcustomers);
 	    
-	    String testing = scan.next();
+	    String testing = scan.nextLine();
 	    System.out.println(testing);
 	    
 		
