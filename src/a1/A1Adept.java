@@ -61,7 +61,7 @@ public class A1Adept {
 				}
 				
 				if (Sum < ufMinCost) {
-					Sum = ufMinCost;
+					ufMinCost = Sum;
 					MinCost= String.format("%.2f", ufMinCost);
 					MinSpender= (FirstName+" "+LastName);
 				}
