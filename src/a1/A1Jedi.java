@@ -21,9 +21,6 @@ public class A1Jedi {
 			Double ItemPrice = scan.nextDouble();
 			Double[] PriceArr= new Double[totalitems];
 			PriceArr[i] = ItemPrice;
-			
-			System.out.println(ItemName);
-			System.out.println(ItemPrice);
 			}
 		
 		int[] totalamounts = new int[totalitems];
@@ -56,12 +53,17 @@ public class A1Jedi {
 					}
 				if (j== numberofcustomers-1) {
 					for (int r = 0; r<totalitems; r++) {
+						if (totalamounts[r] > 0) {
 						System.out.println(totalcustomers[r]+" customers bought "+totalamounts[r]+" "+NameArr[r]);
 				}
+						else {
+							System.out.println("No customers bought "+NameArr[r]);
+						}
 			
 		}
 			
 					
 				}
+	}
 	}
 }
