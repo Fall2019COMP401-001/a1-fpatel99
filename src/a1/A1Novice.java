@@ -33,7 +33,7 @@ public class A1Novice {
 				double sum=+ totaling[m];
 	
 					
-		System.out.println(firstname+". "+lastname+":");
+		System.out.println(firstname+". "+lastname+":"+sum);
 				
 				
 			
