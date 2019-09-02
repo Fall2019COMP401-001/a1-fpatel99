@@ -26,15 +26,10 @@ public class A1Novice {
 				String item = scan.next();
 				double price = scan.nextDouble();
 				
-				int totalitem = (int) (numitems * price);
-				
-				int[] costs = new int[totalitem];
-						
-				for (int k = 0; k<= itemtypes; k++);
-				
-					int totalcost = totaling + totalitem;
+				double totalitem = (numitems * price);
+				double totalcost = totaling + totalitem;
 			
-			System.out.println(firstname+lastname+":"+totalcost);
+			System.out.println(firstname+"."+lastname+":"+totalcost);
 				
 				
 				
