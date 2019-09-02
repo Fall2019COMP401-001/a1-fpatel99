@@ -44,12 +44,6 @@ public class A1Novice {
 	    	
 	    
 	    
-	    }
-		
-	}
-
-	private static Object calculateValueSum(int[] costs) {
-		// TODO Auto-generated method stub
-		return null;
+	   }	
 	}
 }
