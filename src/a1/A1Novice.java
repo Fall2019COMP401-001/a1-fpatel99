@@ -31,10 +31,8 @@ public class A1Novice {
 				
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
-				
-				for (int m=0; m < totaling.length; j++) {
 					
-					double sum=+totaling[m];
+				double sum=+totaling[j];
 				
 				
 				
@@ -44,7 +42,6 @@ public class A1Novice {
 					String finalnumber= String.format("%.2f", sum );
 					System.out.println(firstinitial+". "+lastname+": "+finalnumber);
 					
-				}
 					
 			
 				
