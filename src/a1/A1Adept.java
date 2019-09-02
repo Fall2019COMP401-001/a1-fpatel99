@@ -64,17 +64,17 @@ public class A1Adept {
 				}
 				
 				if (k == ItemNumber-1) {
-					TotalSpend+= Sum;
-					if (j == numberofcustomers-1) {
-						Average= (Sum / numberofcustomers);
+					TotalSpend+= Sum;}
+			}
+				if (j == numberofcustomers-1) {
+					Average= (TotalSpend / numberofcustomers);
 					}
-				}
 				
 				System.out.println("Biggest: "+MaxSpender+" ("+MaxCost+")");
 				System.out.println("Smallest: "+MinSpender+" ("+MinCost+")");
 				System.out.println("Average: "+Average);
 			}
-		}
+		
 		
 		
 		
