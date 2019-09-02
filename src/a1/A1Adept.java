@@ -23,12 +23,14 @@ public class A1Adept {
 
 			PriceArr[i] = ItemPrice;
 			
-			System.out.println(ItemName);
-			System.out.println(ItemPrice);
 			}
 		
 		double TotalSpend = 0;
 		String Average = "";
+		double MaxCost = 0;
+		String MaxSpender = "";
+		double MinCost = 0;
+		String MinSpender = "";
 		
 		int numberofcustomers = scan.nextInt();
 		for (int j=0; j<numberofcustomers; j++) {
@@ -37,10 +39,6 @@ public class A1Adept {
 			int ItemNumber = scan.nextInt();
 			
 			double Sum = 0;
-			double MaxCost = 0;
-			String MaxSpender = "";
-			double MinCost = 0;
-			String MinSpender = "";
 			
 			for(int k=0; k<ItemNumber; k++) {
 				int Amount = scan.nextInt();
@@ -52,16 +50,15 @@ public class A1Adept {
 				
 				Sum += (Price*Amount);
 				
-				System.out.println(FirstName+LastName);
-				
 				if (Sum > MaxCost) {
 					MaxCost= Sum;
 					MaxSpender= (FirstName+" "+LastName);
-				}
 				
-				if (Sum <= MinCost) {
+				
+				if (Sum <= MaxCost) {
 					MinCost= Sum;
 					MinSpender= (FirstName+" "+LastName);
+				}
 				}
 				
 				if (k == ItemNumber-1) {
@@ -70,11 +67,12 @@ public class A1Adept {
 				if (j == numberofcustomers-1) {
 					double UnformattedAv= (TotalSpend / numberofcustomers);
 					Average= String.format("%.2f", UnformattedAv);
-					}
+					
 				
 				System.out.println("Biggest: "+MaxSpender+" ("+MaxCost+")");
 				System.out.println("Smallest: "+MinSpender+" ("+MinCost+")");
 				System.out.println("Average: "+Average);
+				}
 			}
 		}
 		
