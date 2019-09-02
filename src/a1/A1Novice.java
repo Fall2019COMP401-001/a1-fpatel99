@@ -20,7 +20,7 @@ public class A1Novice {
 			int itemtypes = scan.nextInt();
 			
 			char firstinitial = firstname.charAt(0);
-			
+			double sum1 = 0;
 			for (int j = 0; j < itemtypes; j++) {
 			
 				int numitems = scan.nextInt();
@@ -31,8 +31,8 @@ public class A1Novice {
 				
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
-					
-				double sum=+totaling[j-1];
+				
+				double sum= sum1 +totaling[j];
 				
 				
 				
