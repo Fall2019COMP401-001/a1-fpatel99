@@ -16,7 +16,7 @@ public class A1Novice {
 	    
 	    for (int i = 0; i <= totalcustomers; i++) {
 	    	
-	    	String items = scan.next();
+	    	int items = scan.nextInt();
 	    	
 	    	System.out.println(items);
 	    	
