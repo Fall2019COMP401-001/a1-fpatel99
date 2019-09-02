@@ -18,7 +18,6 @@ public class A1Novice {
 			String firstname = scan.next();
 			String lastname = scan.next();
 			int itemtypes = scan.nextInt();
-			int totaling = 0;
 			
 			for (int j = 0; j <= itemtypes; j++) {
 			
@@ -27,13 +26,13 @@ public class A1Novice {
 				double price = scan.nextDouble();
 				
 				double totalitem = (numitems * price);
-				double totalcost = totaling + totalitem;
+				double totalcost =+ totalitem;
 			
 			
 		System.out.println(firstname+". "+lastname+":"+totalcost);
 				
 				
-				
+			
 				
 				
 				
