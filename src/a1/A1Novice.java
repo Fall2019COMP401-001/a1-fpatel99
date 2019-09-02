@@ -32,7 +32,7 @@ public class A1Novice {
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
 					
-				double sum=+totaling[j];
+				double sum=+totaling[j-1];
 				
 				
 				
