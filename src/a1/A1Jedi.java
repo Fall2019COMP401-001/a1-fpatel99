@@ -43,17 +43,18 @@ public class A1Jedi {
 					String Item = scan.next();
 					items[k]= Item;
 					
-					int index= Arrays.binarySearch(NameArr, Item);
-					totalamounts[index] += Amount;
+					int index1= Arrays.binarySearch(NameArr, Item);
+					totalamounts[index1] += Amount;
+					
+					int index2= Arrays.binarySearch(NameArr, items[k-1]);
 					
 					if (Amount>0) {
-						int index2= Arrays.binarySearch(items, Item);
-						if (index2 < k) {
-						totalcustomers[index] += 0;
+						if (index1==index2) {
+						totalcustomers[index1] += 0;
 						}
 						
 						else {
-							totalcustomers[index] += 1;
+							totalcustomers[index1] += 1;
 					}
 
 					}
