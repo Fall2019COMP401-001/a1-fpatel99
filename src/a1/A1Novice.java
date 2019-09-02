@@ -31,7 +31,7 @@ public class A1Novice {
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
 				
-				double sum=+ totalitem;
+				double sum=+ totaling[j];
 				String.format("%.2f", sum);
 				
 				if (j == itemtypes-1) {		
