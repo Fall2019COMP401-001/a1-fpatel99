@@ -14,9 +14,11 @@ public class A1Novice {
 	    int totalcustomers = scan.nextInt();// Read user input
 	    System.out.println(totalcustomers);
 	    
-	    String testing = scan.nextLine();
+	    String testing = scan.next();
 	    System.out.println(testing);
 	    
+	    int totalcustomer = scan.nextInt();// Read user input
+	    System.out.println(totalcustomer);
 		
 	    int[] lists = new int[totalcustomers];
 		System.out.println(lists.length);
