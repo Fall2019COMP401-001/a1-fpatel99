@@ -48,8 +48,12 @@ public class A1Jedi {
 					
 					if (Amount>0) {
 						int index2= Arrays.binarySearch(items, Item);
-						if (index2 < 0) {
-						totalcustomers[index] += 1;
+						if (index2 >= 0) {
+						totalcustomers[index] += 0;
+						}
+						
+						else {
+							totalcustomers[index] += 1;
 					}
 
 					}
