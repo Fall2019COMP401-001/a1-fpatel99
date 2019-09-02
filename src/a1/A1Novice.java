@@ -18,10 +18,11 @@ public class A1Novice {
 	    System.out.println(test);
 	    
 	    int[] numbers = new int[totalcustomers];
+	    System.out.println(numbers);
 	    
 	    for (int i = 0; i <= totalcustomers; i++) {
 	    	
-	    	int items = scan.nextInt();
+	    	int items = 0;
 	    	
 	    	System.out.println(items);
 	    	
