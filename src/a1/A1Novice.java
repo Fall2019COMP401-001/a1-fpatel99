@@ -19,6 +19,8 @@ public class A1Novice {
 			String lastname = scan.next();
 			int itemtypes = scan.nextInt();
 			
+			char firstinitial = firstname.charAt(0);
+			
 			for (int j = 0; j < itemtypes; j++) {
 			
 				int numitems = scan.nextInt();
@@ -30,7 +32,7 @@ public class A1Novice {
 				totaling[j] = totalitem;
 	
 					
-		System.out.println(firstname+". "+lastname+":"+totalitem);
+		System.out.println(firstinitial+". "+lastname+":"+totalitem);
 				
 				
 			
