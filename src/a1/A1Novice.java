@@ -15,7 +15,7 @@ public class A1Novice {
 	    System.out.println(totalcustomers);
 	    
 		String[] lists = {totalcustomers};
-		System.out.println(lists);
+		System.out.println(lists.length);
 	    
 
 
