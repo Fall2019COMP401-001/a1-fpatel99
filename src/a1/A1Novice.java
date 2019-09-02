@@ -28,15 +28,9 @@ public class A1Novice {
 				double totalitem = (numitems * price);
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
-				
-				for (int m=0; m<= itemtypes; m++) {
-					double placeholder= 0;
-					double total= totaling[m]+ placeholder;
-				
-						System.out.println(total);
-				
-				}
-			}
+			
+			for (int m = 0; m<= itemtypes; m++) {
+				double sum=+ totaling[m];
 	
 					
 		System.out.println(firstname+". "+lastname+":");
@@ -49,9 +43,9 @@ public class A1Novice {
 			
 	    	
 	    	
-	    	
+			}
 	    
-			
+			}
 			
 		}
 	}
