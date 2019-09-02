@@ -1,6 +1,7 @@
 package a1;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class A1Adept {
 
@@ -9,16 +10,17 @@ public class A1Adept {
 		Scanner scan = new Scanner(System.in);
 
 		// Your code follows here.
-		
-		
 		int totalitems= scan.nextInt();
+		String[] NameArr= new String[totalitems];
+		Double[] PriceArr= new Double[totalitems];
+		
 		for (int i = 0; i<totalitems; i++) {
 			String ItemName= scan.next();
-			String[] NameArr= new String[totalitems];
+			
 			NameArr[i] = ItemName;
 				
 			Double ItemPrice = scan.nextDouble();
-			Double[] PriceArr= new Double[totalitems];
+
 			PriceArr[i] = ItemPrice;
 			
 			System.out.println(ItemName);
@@ -31,11 +33,46 @@ public class A1Adept {
 			String LastName = scan.next();
 			int ItemNumber = scan.nextInt();
 			
+			double Sum = 0;
+			double MaxCost = 0;
+			String MaxSpender = "";
+			double MinCost = 0;
+			String MinSpender = "";
+			double TotalSpend = 0;
+			double Average = 0;
+			
 			for(int k=0; k<ItemNumber; k++) {
 				int Amount = scan.nextInt();
 				String Item = scan.next();
 				
+				int Index = Arrays.binarySearch(NameArr, Item);
+				double Price = PriceArr[Index];
+				
+				
+				Sum += (Price*Amount);
+				
 				System.out.println(FirstName+LastName);
+				
+				if (Sum > MaxCost) {
+					MaxCost= Sum;
+					MaxSpender= (FirstName+" "+LastName);
+				}
+				
+				if (Sum < MinCost) {
+					MinCost= Sum;
+					MinSpender= (FirstName+" "+LastName);
+				}
+				
+				if (k == ItemNumber-1) {
+					TotalSpend+= Sum;
+					if (j == numberofcustomers-1) {
+						Average= (Sum / numberofcustomers);
+					}
+				}
+				
+				System.out.println("Biggest: "+MaxSpender+" ("+MaxCost+")");
+				System.out.println("Smallest: "+MinSpender+" ("+MinCost+")");
+				System.out.println("Average: "+Average);
 			}
 		}
 		
