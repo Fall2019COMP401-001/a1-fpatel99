@@ -33,7 +33,7 @@ public class A1Jedi {
 				int ItemNumber = scan.nextInt();
 				
 				//int[] amounts = new int[ItemNumber];
-				//String[] items = new String[ItemNumber];
+				String[] items = new String[ItemNumber];
 				
 				for(int k=0; k<ItemNumber; k++) {
 					
@@ -41,12 +41,14 @@ public class A1Jedi {
 					//amounts[k]= Amount;
 					
 					String Item = scan.next();
-					//items[k]= Item;
+					items[k]= Item;
 					
 					int index= Arrays.binarySearch(NameArr, Item);
 					totalamounts[index] += Amount;
 					
 					if (Amount>0) {
+						int index2= Arrays.binarySearch(items, Item);
+						if (index2 < 0) {
 						totalcustomers[index] += 1;
 					}
 
@@ -64,6 +66,7 @@ public class A1Jedi {
 			
 					
 				}
+	}
 	}
 	}
 }
