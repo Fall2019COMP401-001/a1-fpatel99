@@ -29,7 +29,8 @@ public class A1Novice {
 				double totalitem = (numitems * price);
 				double totalcost = totaling + totalitem;
 			
-			System.out.println(firstname+"."+lastname+":"+totalcost);
+			
+		System.out.println(firstname+". "+lastname+":"+totalcost);
 				
 				
 				
@@ -42,9 +43,8 @@ public class A1Novice {
 	    	
 	    
 	    	
-	    
-	    
-	   }	
+			}
+		}
 	}
 }
-}
+
