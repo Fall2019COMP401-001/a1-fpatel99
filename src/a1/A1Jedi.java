@@ -26,6 +26,8 @@ public class A1Jedi {
 			System.out.println(ItemPrice);
 			}
 		
+		int[] totalamounts = new int[totalitems];
+		int[] totalcustomers = new int[totalitems];
 		int numberofcustomers = scan.nextInt();
 
 			for (int j=0; j<numberofcustomers; j++) {
@@ -35,9 +37,6 @@ public class A1Jedi {
 				
 				//int[] amounts = new int[ItemNumber];
 				//String[] items = new String[ItemNumber];
-				
-				int[] totalamounts = new int[totalitems];
-				int[] totalcustomers = new int[totalitems];
 				
 				for(int k=0; k<ItemNumber; k++) {
 					
