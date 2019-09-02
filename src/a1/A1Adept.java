@@ -27,10 +27,12 @@ public class A1Adept {
 		
 		double TotalSpend = 0;
 		String Average = "";
-		double MaxCost = 0;
+		double ufMaxCost = 0;
 		String MaxSpender = "";
-		double MinCost = 0;
+		double ufMinCost = 100000000;
 		String MinSpender = "";
+		String MaxCost="";
+		String MinCost= "";
 		
 		int numberofcustomers = scan.nextInt();
 		for (int j=0; j<numberofcustomers; j++) {
@@ -50,15 +52,15 @@ public class A1Adept {
 				
 				Sum += (Price*Amount);
 				
-				if (Sum > MaxCost) {
-					MaxCost= Sum;
+				if (Sum > ufMaxCost) {
+					MaxCost= String.format("%.2f", ufMaxCost);
 					MaxSpender= (FirstName+" "+LastName);
 				
-				
-				if (Sum <= MaxCost) {
-					MinCost= Sum;
-					MinSpender= (FirstName+" "+LastName);
 				}
+				
+				if (Sum <= ufMinCost) {
+					MinCost= String.format("%.2f", ufMinCost);
+					MinSpender= (FirstName+" "+LastName);
 				}
 				
 				if (k == ItemNumber-1) {
