@@ -20,7 +20,7 @@ public class A1Novice {
 			int itemtypes = scan.nextInt();
 			
 			char firstinitial = firstname.charAt(0);
-			double sum1 = 0;
+			double sum = 0;
 			for (int j = 0; j < itemtypes; j++) {
 			
 				int numitems = scan.nextInt();
@@ -32,13 +32,13 @@ public class A1Novice {
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
 				
-				double sum=+totaling[j];
+				double sum1= sum(totaling);
 				
 				
 				
 				
 				if (j == itemtypes-1) {	
-					String finalnumber= String.format("%.2f", sum );
+					String finalnumber= String.format("%.2f", sum1 );
 					System.out.println(firstinitial+". "+lastname+": "+finalnumber);
 					
 					
@@ -51,6 +51,11 @@ public class A1Novice {
 	    
 			}
 		}
+	}
+
+	private static double sum(double[] totaling) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
 
