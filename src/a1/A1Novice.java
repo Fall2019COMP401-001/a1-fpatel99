@@ -28,20 +28,27 @@ public class A1Novice {
 				double price = scan.nextDouble();
 				
 				double totalitem = (numitems * price);
+				
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
 				
-				double sum=+ totaling[j];
-				String.format("%.2f", totalitem);
+				for (int m=0; m < totaling.length; j++) {
+					
+					double sum=+totaling[m];
 				
-				if (j == itemtypes-1) {		
-					System.out.println(firstinitial+". "+lastname+": "+totalitem);
+				
+				
+				
+				if (j == itemtypes-1) {	
+					
+					String finalnumber= String.format("%.2f", sum );
+					System.out.println(firstinitial+". "+lastname+": "+finalnumber);
 					
 				}
 					
 			
 				
-				
+				}
 			
 	    	
 	    	
