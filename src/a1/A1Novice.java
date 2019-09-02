@@ -26,14 +26,36 @@ public class A1Novice {
 	    int[] lists = new int[totalcustomers];
 		System.out.println(lists.length);
 	    
-
-
-	    
-	    //for (int i = 0; i <= totalcustomers; i++) {
+		for (int i = 0; i <= totalcustomers; i++) {
+			
+			String firstname = scan.next();
+			String lastname = scan.next();
+			int itemtypes = scan.nextInt();
+			int totaling = 0;
+			
+			for (int j = 0; j <= itemtypes; j++);
+			
+				int numitems = scan.nextInt();
+				String item = scan.next();
+				double price = scan.nextDouble();
+				
+				int totalitem = (int) (numitems * price);
+				
+				int[] costs = new int[totalitem];
+						
+				for (int k = 0; k<= itemtypes; k++);
+				
+					int totalcost = totaling + totalitem;
+			
+			System.out.println(totalcost);
+				
+				
+				
+				
+				
+				
+			
 	    	
-	    	int items = 0;
-	    	
-	    	System.out.println(items);
 	    	
 	    	
 	    
@@ -43,4 +65,9 @@ public class A1Novice {
 	    }
 		
 	}
-//}
+
+	private static Object calculateValueSum(int[] costs) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
