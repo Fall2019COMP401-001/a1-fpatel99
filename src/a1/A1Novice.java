@@ -15,12 +15,12 @@ public class A1Novice {
 	    System.out.println(totalcustomers);
 	    
 	    for (int i = 0; i <= totalcustomers; i++) {
-	    	int items = scan.nextInt();
+	    	
+	    	String items = scan.next();
 	    	
 	    	System.out.println(items);
 	    	
-	    	for (int m = 0; m <= items; i++);                  
-	    	System.out.println("Enter Customer Name");
+	    	
 	    
 	    	
 	    
