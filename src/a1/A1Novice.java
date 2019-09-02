@@ -29,12 +29,13 @@ public class A1Novice {
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
 				
-				double placeholder= 0;
+				for (int m=0; m<= itemtypes; m++) {
+					double placeholder= 0;
+					double total= totaling[m]+ placeholder;
 				
-				double total= totaling[j]+ placeholder;
+						System.out.println(total);
 				
-				System.out.println(total);
-				
+				}
 			}
 	
 					
