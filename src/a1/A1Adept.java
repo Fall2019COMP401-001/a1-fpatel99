@@ -52,13 +52,16 @@ public class A1Adept {
 				
 				Sum += (Price*Amount);
 				
+				if (k== ItemNumber-1) {
 				if (Sum > ufMaxCost) {
+					ufMaxCost = Sum;
 					MaxCost= String.format("%.2f", ufMaxCost);
 					MaxSpender= (FirstName+" "+LastName);
 				
 				}
 				
-				if (Sum <= ufMinCost) {
+				if (Sum < ufMinCost) {
+					Sum = ufMinCost;
 					MinCost= String.format("%.2f", ufMinCost);
 					MinSpender= (FirstName+" "+LastName);
 				}
@@ -74,6 +77,7 @@ public class A1Adept {
 				System.out.println("Biggest: "+MaxSpender+" ("+MaxCost+")");
 				System.out.println("Smallest: "+MinSpender+" ("+MinCost+")");
 				System.out.println("Average: "+Average);
+				}
 				}
 			}
 		}
