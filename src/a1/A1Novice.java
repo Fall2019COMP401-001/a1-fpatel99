@@ -26,8 +26,18 @@ public class A1Novice {
 				double price = scan.nextDouble();
 				
 				double totalitem = (numitems * price);
+				double[] totaling = new double[itemtypes];
+				totaling[j] = totalitem;
+				
+				double placeholder= 0;
+				
+				double total= totaling[j]+ placeholder;
+				
+				System.out.println(total);
+				
 			}
-			
+	
+					
 		System.out.println(firstname+". "+lastname+":");
 				
 				
@@ -40,7 +50,7 @@ public class A1Novice {
 	    	
 	    	
 	    
-	    	
+			
 			
 		}
 	}
