@@ -20,7 +20,7 @@ public class A1Novice {
 			int itemtypes = scan.nextInt();
 			int totaling = 0;
 			
-			for (int j = 0; j <= itemtypes; j++);
+			for (int j = 0; j <= itemtypes; j++) {
 			
 				int numitems = scan.nextInt();
 				String item = scan.next();
@@ -46,4 +46,5 @@ public class A1Novice {
 	    
 	   }	
 	}
+}
 }
