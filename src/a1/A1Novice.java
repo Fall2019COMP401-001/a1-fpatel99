@@ -12,8 +12,6 @@ public class A1Novice {
 		// Your code follows here.
 		
 	    int totalcustomers = scan.nextInt();// Read user input
-	    System.out.println(totalcustomers);
-	    
 	    
 		for (int i = 0; i <= totalcustomers; i++) {
 			
@@ -36,7 +34,7 @@ public class A1Novice {
 				
 					int totalcost = totaling + totalitem;
 			
-			System.out.println(totalcost);
+			System.out.println(firstname+lastname+":"+totalcost);
 				
 				
 				
