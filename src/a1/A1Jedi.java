@@ -45,15 +45,19 @@ public class A1Jedi {
 					
 					int index1= Arrays.binarySearch(NameArr, Item);
 					totalamounts[index1] += Amount;
-					
-					if (k>0) {
-					int index2= Arrays.binarySearch(NameArr, items[k-1]);
+
 					
 					if (Amount>0) {
+						if (k>0) {
+						int index2= Arrays.binarySearch(NameArr, items[k-1]);
 						if (index1==index2) {
 						totalcustomers[index1] += 0;
 						}
 						
+						else {
+							totalcustomers[index1] += 1;
+						}
+						}
 						else {
 							totalcustomers[index1] += 1;
 						}
@@ -76,4 +80,3 @@ public class A1Jedi {
 	}
 	}
 	}
-}
