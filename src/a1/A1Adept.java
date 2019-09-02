@@ -27,6 +27,9 @@ public class A1Adept {
 			System.out.println(ItemPrice);
 			}
 		
+		double TotalSpend = 0;
+		String Average = "";
+		
 		int numberofcustomers = scan.nextInt();
 		for (int j=0; j<numberofcustomers; j++) {
 			String FirstName = scan.next();
@@ -38,8 +41,6 @@ public class A1Adept {
 			String MaxSpender = "";
 			double MinCost = 0;
 			String MinSpender = "";
-			double TotalSpend = 0;
-			double Average = 0;
 			
 			for(int k=0; k<ItemNumber; k++) {
 				int Amount = scan.nextInt();
@@ -58,25 +59,24 @@ public class A1Adept {
 					MaxSpender= (FirstName+" "+LastName);
 				}
 				
-				if (Sum < MinCost) {
+				if (Sum <= MinCost) {
 					MinCost= Sum;
 					MinSpender= (FirstName+" "+LastName);
 				}
 				
 				if (k == ItemNumber-1) {
 					TotalSpend+= Sum;}
-			}
+
 				if (j == numberofcustomers-1) {
-					Average= (TotalSpend / numberofcustomers);
+					double UnformattedAv= (TotalSpend / numberofcustomers);
+					Average= String.format("%.2f", UnformattedAv);
 					}
 				
 				System.out.println("Biggest: "+MaxSpender+" ("+MaxCost+")");
 				System.out.println("Smallest: "+MinSpender+" ("+MinCost+")");
 				System.out.println("Average: "+Average);
 			}
+		}
 		
-		
-		
-		
-	}
+		}		
 }
