@@ -32,13 +32,12 @@ public class A1Novice {
 				double[] totaling = new double[itemtypes];
 				totaling[j] = totalitem;
 				
-				double sum= sum1 +totaling[j];
+				double sum= (sum1 +totaling[j]);
 				
 				
 				
 				
 				if (j == itemtypes-1) {	
-					
 					String finalnumber= String.format("%.2f", sum );
 					System.out.println(firstinitial+". "+lastname+": "+finalnumber);
 					
