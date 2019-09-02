@@ -14,6 +14,9 @@ public class A1Novice {
 	    int totalcustomers = scan.nextInt();// Read user input
 	    System.out.println(totalcustomers);
 	    
+	    Double test = scan.nextDouble();
+	    System.out.println(test);
+	    
 	    int[] numbers = new int[totalcustomers];
 	    
 	    for (int i = 0; i <= totalcustomers; i++) {
